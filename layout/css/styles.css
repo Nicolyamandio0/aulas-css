@@ -9,16 +9,24 @@
   --primary-color:#47BEBA;
   --secundary-color:#F22E52;
   --text-color-button:#FFF;
+  --padding-buton:1rem 2rem;
+
 }
 
 .primary-color{
     background: var(--primary-color);
     color:var(--text-color-button);
+    padding:var(--padding-buton);
+    display: inline-block;
+    border-radius: 5px;
 }
 
 .secundary-color{
     background: var(--secundary-color);
     color:var(--text-color-button);
+    padding:var(--padding-buton);
+    display: inline-block;
+    border-radius: 5px;
 }
 
 /* top header */
@@ -37,6 +45,7 @@ h1{
     font-size: 48px;
     font-weight: bold;
     color: #160647;
+   
 }
  
 h3{
@@ -46,7 +55,8 @@ h3{
 }
 
 a{
-    text-align: none;
+    text-decoration: none;
+    color: #160647;
 }
 
 
@@ -67,10 +77,97 @@ a{
 .top-header .logo{
     display: flex;
     align-items: center;
+    
 
+}
+
+.top-header .logo h1{
+   margin-right: 6px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
 }
 
 nav ul{
     display: flex;
     list-style: none;
 }
+
+nav ul li{
+    margin: 0 16px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+
+.login .primary-color{
+    margin-left: 16px;
+}
+
+/* cta */
+
+.cta{
+    padding: 208 0;
+
+}
+
+.cta .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cta h2{
+    font-size: 64px;
+    color: #160647;
+    text-align: center;
+}
+
+.cta p{
+    margin: 30px 0 40px;
+    width: 697px;
+    text-align: center;
+    color: #6c6c6c;
+}
+
+.cta a{
+    margin: 0 10px;
+}
+
+.cta a:hover{
+    box-shadow: 0 0 10px #AAA;
+}
+
+.brands .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 123px auto;
+}
+
+.about-us .container{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.about-us-description h4{
+    margin-top: 61px;
+    font-size: 40px;
+    
+}
+
+.about-us-description p{
+    margin: 23px 0;
+    color: #818181;
+}
+
+
+
+
+
